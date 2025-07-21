@@ -1123,31 +1123,31 @@ void Transmogrification::LoadConfig(bool reload)
     TokenEntry = sConfigMgr->GetOption<uint32>("Transmogrification.TokenEntry", 49426);
     TokenAmount = sConfigMgr->GetOption<uint32>("Transmogrification.TokenAmount", 1);
 
-    AllowPoor = sConfigMgr->GetOption<bool>("Transmogrification.AllowPoor", false);
-    AllowCommon = sConfigMgr->GetOption<bool>("Transmogrification.AllowCommon", false);
+    AllowPoor = sConfigMgr->GetOption<bool>("Transmogrification.AllowPoor", true);
+    AllowCommon = sConfigMgr->GetOption<bool>("Transmogrification.AllowCommon", true);
     AllowUncommon = sConfigMgr->GetOption<bool>("Transmogrification.AllowUncommon", true);
     AllowRare = sConfigMgr->GetOption<bool>("Transmogrification.AllowRare", true);
     AllowEpic = sConfigMgr->GetOption<bool>("Transmogrification.AllowEpic", true);
-    AllowLegendary = sConfigMgr->GetOption<bool>("Transmogrification.AllowLegendary", false);
-    AllowArtifact = sConfigMgr->GetOption<bool>("Transmogrification.AllowArtifact", false);
+    AllowLegendary = sConfigMgr->GetOption<bool>("Transmogrification.AllowLegendary", true);
+    AllowArtifact = sConfigMgr->GetOption<bool>("Transmogrification.AllowArtifact", true);
     AllowHeirloom = sConfigMgr->GetOption<bool>("Transmogrification.AllowHeirloom", true);
-    AllowTradeable = sConfigMgr->GetOption<bool>("Transmogrification.AllowTradeable", false);
+    AllowTradeable = sConfigMgr->GetOption<bool>("Transmogrification.AllowTradeable", true);
 
-    AllowMixedArmorTypes = sConfigMgr->GetOption<bool>("Transmogrification.AllowMixedArmorTypes", false);
-    AllowLowerTiers = sConfigMgr->GetOption<bool>("Transmogrification.AllowLowerTiers", false);
-    AllowMixedOffhandArmorTypes = sConfigMgr->GetOption<bool>("Transmogrification.AllowMixedOffhandArmorTypes", false);
-    AllowMixedWeaponHandedness = sConfigMgr->GetOption<bool>("Transmogrification.AllowMixedWeaponHandedness", false);
-    AllowFishingPoles = sConfigMgr->GetOption<bool>("Transmogrification.AllowFishingPoles", false);
+    AllowMixedArmorTypes = sConfigMgr->GetOption<bool>("Transmogrification.AllowMixedArmorTypes", true);
+    AllowLowerTiers = sConfigMgr->GetOption<bool>("Transmogrification.AllowLowerTiers", true);
+    AllowMixedOffhandArmorTypes = sConfigMgr->GetOption<bool>("Transmogrification.AllowMixedOffhandArmorTypes", true);
+    AllowMixedWeaponHandedness = sConfigMgr->GetOption<bool>("Transmogrification.AllowMixedWeaponHandedness", true);
+    AllowFishingPoles = sConfigMgr->GetOption<bool>("Transmogrification.AllowFishingPoles", true);
 
     AllowMixedWeaponTypes = sConfigMgr->GetOption<uint8>("Transmogrification.AllowMixedWeaponTypes", MIXED_WEAPONS_STRICT);
 
-    IgnoreReqRace = sConfigMgr->GetOption<bool>("Transmogrification.IgnoreReqRace", false);
-    IgnoreReqClass = sConfigMgr->GetOption<bool>("Transmogrification.IgnoreReqClass", false);
-    IgnoreReqSkill = sConfigMgr->GetOption<bool>("Transmogrification.IgnoreReqSkill", false);
-    IgnoreReqSpell = sConfigMgr->GetOption<bool>("Transmogrification.IgnoreReqSpell", false);
-    IgnoreReqLevel = sConfigMgr->GetOption<bool>("Transmogrification.IgnoreReqLevel", false);
-    IgnoreReqEvent = sConfigMgr->GetOption<bool>("Transmogrification.IgnoreReqEvent", false);
-    IgnoreReqStats = sConfigMgr->GetOption<bool>("Transmogrification.IgnoreReqStats", false);
+    IgnoreReqRace = sConfigMgr->GetOption<bool>("Transmogrification.IgnoreReqRace", true);
+    IgnoreReqClass = sConfigMgr->GetOption<bool>("Transmogrification.IgnoreReqClass", true);
+    IgnoreReqSkill = sConfigMgr->GetOption<bool>("Transmogrification.IgnoreReqSkill", true);
+    IgnoreReqSpell = sConfigMgr->GetOption<bool>("Transmogrification.IgnoreReqSpell", true);
+    IgnoreReqLevel = sConfigMgr->GetOption<bool>("Transmogrification.IgnoreReqLevel", true);
+    IgnoreReqEvent = sConfigMgr->GetOption<bool>("Transmogrification.IgnoreReqEvent", true);
+    IgnoreReqStats = sConfigMgr->GetOption<bool>("Transmogrification.IgnoreReqStats", true);
     UseCollectionSystem = sConfigMgr->GetOption<bool>("Transmogrification.UseCollectionSystem", true);
     UseVendorInterface = sConfigMgr->GetOption<bool>("Transmogrification.UseVendorInterface", false);
     AllowHiddenTransmog = sConfigMgr->GetOption<bool>("Transmogrification.AllowHiddenTransmog", true);
